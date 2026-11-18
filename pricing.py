@@ -9,8 +9,8 @@ def subtotal(order: Order) -> float:
 
 
 def discount(order: Order) -> float:
-    """VIP 订单满 100 打 85 折。"""
-    if order.vip and subtotal(order) > 100:
+    """VIP 订单满 100（含）打 85 折。"""
+    if order.vip and subtotal(order) >= 100:
         return subtotal(order) * VIP_DISCOUNT
     return 0.0
 
