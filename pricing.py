@@ -1,3 +1,4 @@
+# codepilot approve test
 from models import Order
 
 VIP_DISCOUNT = 0.15
